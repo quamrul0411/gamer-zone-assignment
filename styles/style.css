@@ -46,19 +46,18 @@ justify-content: space-evenly;
 /* ------------------ */
 /* banner part */
 .banner{
-    border: 1px solid bisque;
+    /* border: 1px solid bisque; */
     background: #FFF;
     display: flex;
     padding-left:100px;
     padding-right: 100px;
-    gap: 40px;
+    gap: 10px;
 }
 .banner-text-section{
+    width: 700px;
+    height: 600px;
+    /* fill: linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%); */
     
-    width: 901px;
-    height: 700px;
-    fill: linear-gradient(223deg, rgba(140, 87, 238, 0.03) 0%, rgba(241, 68, 174, 0.03) 100%);
-    /* flex-shrink: 0; */
 }
 .banner-title{
     color: #0B0223;
@@ -68,7 +67,7 @@ justify-content: space-evenly;
 }
 .goat-part{
     text-align: center;
-    font-size: 95px;
+    font-size: 80px;
     font-weight: 800;
     color: #FF42A5;
 }
@@ -81,9 +80,7 @@ justify-content: space-evenly;
     color: #FFF;
     font-size: 20px;
     font-weight: 600;
-    display: inline-flex;
     padding: 20px 40px;
-    align-items: flex-start;
     gap: 10px;
     border-radius: 48px;
     background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
@@ -94,17 +91,17 @@ justify-content: space-evenly;
     font-weight: 600;
     border-radius: 48px;
     background: #4EC5F7;
-    display: inline-flex;
     padding: 21px 40px;
-    align-items: flex-start;
     gap: 10px;
 }
 
 .banner-image-section img{
    padding-right: 20px;
+   width: 400px;
 }
 /* banner part end*/
 
+  /* <!-- online game section --> */
 
 .online-game-container{
     /* border: 1px solid blue; */
@@ -112,7 +109,7 @@ justify-content: space-evenly;
     /* width: 100px;
     height: 500px; */
 
-    /* <!-- online game section --> */
+  
 }
 .online-game-title{
     color: #0B0223;
@@ -147,10 +144,12 @@ font-weight: 400;
     font-weight: 500;
 }
 
-/* <!-- online game section --> */
+/* <!-- online game end section --> */
+
+/* play part */
 
 .play-part{
-    /* border: 1px solid beige; */
+    border: 1px solid beige;
     display: flex;
     justify-content: space-evenly;
 }
@@ -190,8 +189,9 @@ font-weight: 400;
     bottom: 0;
     left: 0;
 }
+/* play part end */
 
-/* <!-- logo-part start --> */
+/* <!-- icon-part start --> */
 
 .icon-container{
     height: 100%;
@@ -223,6 +223,7 @@ align-content: center;
 
 /* logo-part end */
 
+
 .footer-part{
     background: #0B0223;
    
@@ -246,9 +247,9 @@ font-weight: 700;
 
 .footer-para{
     color: #FFF;
-text-align: center;
-font-size: 18px;
-font-weight: 600;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -279,7 +280,54 @@ font-weight: 600;
 .copy{
     color: rgba(255, 255, 255, 0.60);
 text-align: center;
-font-size: 16px;
+font-size: 1rem;
 font-weight: 500;
 padding-bottom: 100px;
 }
+
+@media screen and (max-width:576px) {
+
+    .nav-container, .nav-item-container{
+        flex-direction: column;
+    }
+    .banner{
+        display: flex;
+        flex-direction: column;
+    }
+    .banner-text-section{
+        padding-left: 0px;
+    }
+    .banner-title{
+        text-align: left;
+        font-size: 30px;
+    }
+    .goat-part{
+        text-align: left;
+        font-size: 70px;
+    }
+    .button-part, .btn-go, .btn-sign{
+        font-size: 15px;
+    }
+    .online-game-card-container{
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .play-part{
+        flex-direction: column;
+    }
+    .icon-container{
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }  
+    }
+    
+
+
+
+
+
+
+
+
